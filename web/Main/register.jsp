@@ -22,9 +22,15 @@
         } else {
             errmsg = "An error occurred while sending your request";
         }
+<<<<<<< HEAD
         prenom = request.getParameter("prenom");
         nom = request.getParameter("name");
         username = request.getParameter("login");
+=======
+	prenom = request.getParameter("prenom");
+    	nom = request.getParameter("name");
+    	username = request.getParameter("login");
+>>>>>>> origin/master
     }
     
 
@@ -58,8 +64,13 @@
                     <input type="text" class="loginput" name='name' placeholder='Nom' value="<%=nom%>" required>
                     <input type="text" class="loginput" name='prenom' placeholder='Prenom' value="<%=prenom%>" required>
                     <input type="text" class="loginput" name='login' placeholder='Username' value="<%=username%>" required>
+<<<<<<< HEAD
                     <input type='password' class="loginput" name='password' placeholder='Password' minlength="6" requied>
                     <input type='password' class="loginput" name='password2' placeholder='Confirm Password' minlength="6" requied>
+=======
+                    <input type='password' class="loginput" name='password' placeholder='Password' minleght="6" requied>
+                    <input type='password' class="loginput" name='password2' placeholder='Confirm Password' requied>
+>>>>>>> origin/master
                     <input type='submit' class="logbtn" value='Create new account'>
                     <div id="error" style="display: <%=dsp%>;">
                         <p><%=errmsg%></p>
