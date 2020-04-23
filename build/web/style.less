@@ -1,0 +1,162 @@
+@lightgreen: #d9efcc;
+@midgreen: #7c9c70;
+@maingreen: #234c1e;
+@darkgreen: #0c3410;
+@font: 'Poppins';
+
+
+@container-width: 800px;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+}
+
+body{
+    background-color: @lightgreen;
+}
+
+
+.banner-top{
+    background-color: @maingreen;
+    color: @lightgreen;
+    .banner-container{
+        width: @container-width;
+        margin: 0px auto;
+    }
+    img{
+        width: 200px;
+        padding: 10px;
+        display: inline-block;
+    }
+    .banner-listbtn{
+        
+        float: right;
+        margin-top: 35px;
+
+        button{
+            padding: 10px;
+            background-color: @lightgreen;
+            border-radius: 10px;
+            border: solid 0px;
+            color: @darkgreen;
+            font-weight: bold;
+            margin: 0px 5px;
+            &:hover{
+                background-color: @midgreen;
+            }
+        }
+    }
+}
+
+.content{
+    width: @container-width;
+    margin: 20px auto;
+    color: @darkgreen;
+}
+
+@media (max-width: 800px) {
+    .content{
+        width: auto;
+        margin: 10px;
+    }
+    .banner-top{
+        width: auto;
+        padding: 5px;
+    }
+
+}
+
+.aboutus{
+    margin: 40px 0px;
+    margin-bottom:110px;
+    p{
+        margin: 5px;
+        width: 450px;
+    }
+    img{
+        width: 300px;
+        
+        float: right;
+    }
+}
+
+.whystw{
+    margin: 40px 0px;
+    .listitem{
+        display: inline-block;
+        margin: 30px;
+        width: 300px;
+        img{
+            width: 50px;
+        }
+    }
+}
+
+.ourcluster{
+    .cluster{
+        padding: 10px;
+        border: solid 1px @maingreen;
+        border-radius: 10px;
+        width: 260px;
+        img{
+            border-radius: 10px;
+        }
+    }
+}
+
+footer{
+    background-color: @maingreen;
+    color: @lightgreen;
+    font-size: 9px;
+    .footer-container{
+        width: @container-width;
+        margin: 0px auto;
+        padding: 10px;
+        a{
+            font-size: 10px;
+            text-decoration: none;
+            color: @lightgreen;
+            &:visited{
+                color: @lightgreen;
+            }
+        }
+    }
+    img{
+        width: 150px;
+    }
+
+}
+
+.loginform{
+    margin-top: 100px;
+    input{
+        margin: 10px;
+        border: solid 0px;
+        border-radius: 10px;
+    }
+    .logbtn{
+        width: 375px;
+        padding: 10px;
+        background: @darkgreen;
+        color: @lightgreen;
+        &:hover{
+            background: @midgreen;
+        }
+    }
+    .loginput{
+        display: block;
+        width: 350px;
+        padding: 10px 15px;
+    }
+    #error{
+        color: #ad180a;
+    }
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
+
+}
