@@ -54,7 +54,7 @@
                     <input type="text" class="loginput" name='name' placeholder='Nom' value="<%=nom%>" required>
                     <input type="text" class="loginput" name='prenom' placeholder='Prenom' value="<%=prenom%>" required>
                     <input type="text" class="loginput" name='login' placeholder='Username' value="<%=username%>" required>
-                    <input type='password' class="loginput" name='password' placeholder='Password' requied>
+                    <input type='password' class="loginput" name='password' placeholder='Password' minleght="6" requied>
                     <input type='password' class="loginput" name='password2' placeholder='Confirm Password' requied>
                     <input type='submit' class="logbtn" value='Create new account'>
                     <div id="error" style="display: <%=dsp%>;">
