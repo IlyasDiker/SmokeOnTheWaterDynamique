@@ -9,6 +9,9 @@
     String dsp = "none";
     String error = request.getParameter("error");
     String errmsg = "";
+    String prenom = "";
+    String nom = "";
+    String username = "";
     
     if(error != null){
         dsp = "block";
@@ -19,10 +22,11 @@
         } else {
             errmsg = "An error occurred while sending your request";
         }
+        prenom = request.getParameter("prenom");
+        nom = request.getParameter("name");
+        username = request.getParameter("login");
     }
-    String prenom = request.getParameter("prenom");
-    String nom = request.getParameter("name");
-    String username = request.getParameter("login");
+    
 
 %>
 <!DOCTYPE html>
@@ -54,8 +58,8 @@
                     <input type="text" class="loginput" name='name' placeholder='Nom' value="<%=nom%>" required>
                     <input type="text" class="loginput" name='prenom' placeholder='Prenom' value="<%=prenom%>" required>
                     <input type="text" class="loginput" name='login' placeholder='Username' value="<%=username%>" required>
-                    <input type='password' class="loginput" name='password' placeholder='Password' requied>
-                    <input type='password' class="loginput" name='password2' placeholder='Confirm Password' requied>
+                    <input type='password' class="loginput" name='password' placeholder='Password' minlength="6" requied>
+                    <input type='password' class="loginput" name='password2' placeholder='Confirm Password' minlength="6" requied>
                     <input type='submit' class="logbtn" value='Create new account'>
                     <div id="error" style="display: <%=dsp%>;">
                         <p><%=errmsg%></p>

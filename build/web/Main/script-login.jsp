@@ -19,9 +19,9 @@
             if(rs.next()){
                 session.setAttribute("login", log_in);
                 session.setAttribute("rank", rs.getString(1));
-                response.sendRedirect("");
+                response.sendRedirect("../ClientArea/Home.jsp");
             }else{
                RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp?error=1");
-               dispatcher.include(request, response); 
+               dispatcher.include(request, response);
             }
 %>

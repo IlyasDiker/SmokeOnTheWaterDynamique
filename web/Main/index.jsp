@@ -33,12 +33,12 @@
                 <center><h2>Why Smoke on the water</h2>
                 <p>We’re the world’s leading destination to learn about, find about cannabis.</p>
                 <div class="listitem">
-                    <img src="../imgs/search.png">
+                    <img src="../imgs/book.png">
                     <h3>Learn</h3>
                     <p>Start at the top or dive deep into strain effects and reviews.</p>
                 </div>
                 <div class="listitem">
-                    <img src="../imgs/cana.png">
+                    <img src="../imgs/search.png">
                     <h3>Find</h3>
                     <p>Start at the top or dive deep into strain effects and reviews.</p>
                 </div>

@@ -5,7 +5,7 @@
 @font: 'Poppins';
 
 
-@container-width: 800px;
+@container-width: 900px;
 
 *{
     margin: 0px;
@@ -34,7 +34,10 @@ body{
         
         float: right;
         margin-top: 35px;
-
+        a{
+            display: inline-block;
+        }
+        
         button{
             padding: 10px;
             background-color: @lightgreen;
@@ -47,6 +50,7 @@ body{
                 background-color: @midgreen;
             }
         }
+        
     }
 }
 
@@ -153,10 +157,43 @@ footer{
     #error{
         color: #ad180a;
     }
+    select{
+        display: block;
+        width: 375px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: solid 0px;
+    }
 }
 
 footer{
     position: relative;
     bottom: 0px;
 
+}
+
+table{
+    border-collapse: collapse;
+    width: @container-width;
+    thead{
+        background-color: @maingreen;
+        color: @lightgreen;
+    }
+    table, th, td{
+        border: 1px solid @maingreen;
+        padding: 10px;
+    }
+    input{
+        width: 100px;
+    }
+    
+}
+
+.badge{
+    background-color: @maingreen;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 13px;
+    color: @lightgreen;
+    text-decoration: none;
 }
