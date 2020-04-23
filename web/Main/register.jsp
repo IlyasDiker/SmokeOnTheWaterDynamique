@@ -9,6 +9,9 @@
     String dsp = "none";
     String error = request.getParameter("error");
     String errmsg = "";
+    String prenom = "";
+    String nom = "";
+    String username = "";
     
     if(error != null){
         dsp = "block";
@@ -19,10 +22,11 @@
         } else {
             errmsg = "An error occurred while sending your request";
         }
+	prenom = request.getParameter("prenom");
+    	nom = request.getParameter("name");
+    	username = request.getParameter("login");
     }
-    String prenom = request.getParameter("prenom");
-    String nom = request.getParameter("name");
-    String username = request.getParameter("login");
+    
 
 %>
 <!DOCTYPE html>
