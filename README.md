@@ -25,8 +25,11 @@ Structure
 
 **AdminArea** : the admin dashboard can access
 
-- Not Done yet.
-
+- You sell all users
+  - Edit the Users info (username - password - rank)
+  - promote Users
+  - delete Users
+  - Add new Admin Users
 
 
 ---------------------------
